@@ -9,7 +9,7 @@ import TextField from '@material-ui/core/TextField';
 const styles = () => ({
   root: {
     flexGrow: 1,
-    padding: '60px 10px 20px 10px',
+    padding: '100px 10px 20px 10px',
   },
   textField: {
     maxWidth: '800px',

@@ -4,8 +4,6 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import { withStyles } from '@material-ui/core/styles';
 
-import logo from '../../assets/logo.png';
-
 const styles = () => ({
   toolbar: {
     display: 'flex',
@@ -20,8 +18,8 @@ function Header(props) {
   return (
     <AppBar position="fixed">
       <Toolbar className={classes.toolbar}>
-        <a className={classes.anchor} href="https://stack-labs.com">
-          <img src={logo} height="20" alt="stack-labs-logo" />
+        <a className={classes.anchor} href="https://www.coworking-toulouse.com/">
+          <img src="http://www.coworking-toulouse.com/wp-content/uploads/2015/04/etincelle-coworking-e1428181529836.gif" height="60" alt="etincelle-coworking-logo" />
         </a>
       </Toolbar>
     </AppBar>

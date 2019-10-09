@@ -1,19 +1,17 @@
-service: 'stack-coffee-talk-cls'
+service: 'serverless-coffee-talk-etincelle'
 
 provider:
   name: aws
-  stage: ${opt:env, 'dev'}
-  runtime: nodejs8.10
+  runtime: nodejs14.x
   region: 'eu-west-1'
+  lambdaHashingVersion: 20201221
   environment:
-    S3_BUCKET_NAME: serverless-stack-labs-coffee-talk-cls
-  variableSyntax: "\\${((?=self:|env:|opt:|ssm:|s3:|cf:|deep:|file\\()[ ~:a-zA-Z0-9._\\'\",\\-\\/\\(\\)]+?)}"
+    S3_BUCKET_NAME: serverless-coffee-talk-etincelle
 
 package:
   exclude:
     - "**/*"
   include:
-    - templates/lambdas/getPosts.js
     - templates/lambdas/translator.js
 
 functions:
